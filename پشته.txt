@@ -1,0 +1,45 @@
+»—‰«„Â «Ì òÂ ”«Œ «— Å‘ Â —« ÅÌ«œÂ ”«“Ì ò‰œ
+      int sc;
+      int st;
+      int i=0;
+      int enamber,out;
+       for(;;)
+        {
+         System.out.print("Enter length of array:");
+         Scanner s = new Scanner(System.in);
+         sc=s.nextInt();
+         int[] intArray;
+         intArray = new int[sc];
+          for(;;)
+           {
+            if(i==sc)
+             {
+              i=0;
+              break;         
+             }
+         System.out.print("for enter to stack(1) or To read from stack(2):");
+         Scanner fd = new Scanner(System.in);
+         st=fd.nextInt();
+           if(i<=0&&st==2)
+            {
+             System.out.println("khali mibashad");  
+             i=0;
+             st=0;
+            }
+           if(st==1)
+            {
+             System.out.print("Enter namber:"); 
+             Scanner en = new Scanner(System.in);
+             enamber=en.nextInt();
+             intArray[i]=enamber;
+             i=i+1;
+            }
+          if(st==2)
+           {
+            System.out.print("Output stack:");
+            out=intArray[i-1];
+            System.out.println(out);
+            i--;
+           }
+         }   
+    } 
